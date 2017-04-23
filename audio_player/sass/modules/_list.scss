@@ -1,0 +1,12 @@
+.list {
+
+	font-family: $p-font;
+   	background-color: $rose-color;
+   	padding: 40px;
+   	cursor: pointer;
+
+	li {
+		list-style-type: none;
+		margin: 5px 0;
+	}
+}

@@ -1,0 +1,27 @@
+.info {
+    background-color: $gray-color;
+    color: white;
+    display: flex;
+    text-align: center;
+    width: 90%;
+}
+
+.info-childs span {
+    background-color: $gray-color;
+    height: 100px;
+    width: 100px;
+}
+
+.currentSong {
+
+    h2 {
+        font-family: $tittle-font;
+        font-size: $tittle-size;
+        margin: 20px 0 5px 0;
+    }
+
+    h4 {
+        font-family: $p-font;
+        margin-bottom: 50px;
+    }
+}

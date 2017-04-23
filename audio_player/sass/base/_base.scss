@@ -1,0 +1,40 @@
+@import "helpers";
+@import "variables";
+
+* {
+	margin: 0 auto;
+}
+
+body {
+	background-color: $gray-color;
+	width: 100%;
+}
+
+.headerStyle {
+	color: white;
+	font-family: $tittle-font;
+	text-transform: uppercase;
+	padding: 30px 0;
+	text-align: center;
+	margin-top: 1px;
+
+	img {
+		margin-top: 20px;
+	}
+}
+
+footer {
+	background-color: $rose-color;
+	color: $gray-color;
+	font-family: $p-font;
+	font-size: 12px;
+	margin-top: 30px;
+	padding: 15px;
+	text-align: center;
+}
+
+li {
+	color: white;
+	text-align: center;
+	font-family: $p-font;
+}

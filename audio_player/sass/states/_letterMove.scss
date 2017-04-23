@@ -1,0 +1,65 @@
+$font-size: 25px;
+$letter-spacing: 0.0625em;
+$letter-count: 20;
+$mask-color: $gray-color;
+$font-color: white;
+
+$letter-size: calc(1ch + #{$letter-spacing});
+$cursor-width: 1px;
+$cursor-blink-duration: $letter-count;
+$font-width: calc(#{$letter-count}ch + #{$letter-count}*#{$letter-spacing});
+
+.tittleStyle {
+    top: 22%;
+
+    h3 {
+        color: $font-color;
+        position: relative;
+        font-size: $font-size;
+        letter-spacing: $letter-spacing;
+        text-align: center;
+        white-space: nowrap;
+        width: $font-width;
+
+    &:after {
+        background: $mask-color;
+        content: '';
+        display: block;
+        height: 2ex;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: $font-width;
+      
+        animation: .6s blink $cursor-blink-duration, move $transition-time 1.5s forwards steps(1);
+        border-left: $cursor-width solid $font-color;
+        box-shadow: 0px 1ex 0px 0px $mask-color;
+
+        @keyframes move {
+          @for $i from 1 through $letter-count {
+            $temp: 100/$letter-count;
+            $percent: $i*$temp;
+            #{$percent}% {
+              width: calc(#{$font-width} - (#{$i}ch + #{$i}*#{$letter-spacing}));
+              left: calc(#{$i}ch + #{$i}*#{$letter-spacing});
+            }
+          }
+        }
+
+        @keyframes blink {
+          0% {
+              border-left-color: $font-color;
+          }
+          50% {
+              border-left-color: $font-color;
+          }
+          51% {
+              border-left-color: $mask-color;
+          }
+          100% {
+              border-left-color: $mask-color;
+            }
+        }
+        }
+    }
+}

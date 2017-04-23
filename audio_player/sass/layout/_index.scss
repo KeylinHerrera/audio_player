@@ -1,0 +1,89 @@
+.headerIndex {
+	padding: 20px 0 35px 0;
+	text-align: center;
+}
+
+.main-nav {
+	text-align: center;
+
+
+	li {
+		display: inline-block;
+		margin: 20px 91px 20px 50px;
+		text-decoration: none;
+	}
+
+	p {
+		font-family: $p-font;
+		font-size: $p-size;
+		color: white;
+		padding: 10px 0 0 0;
+		text-transform: uppercase;
+	}
+
+}
+
+.item {
+	border-radius: 100px;
+	cursor: pointer;
+	display: inline-block;
+	height: 200px;
+	position: relative;
+	width: 200px;
+}
+
+.chillItem {
+	background: url(../img/chill/chill_03.jpg);
+
+	&:hover {
+		background: url(../img/chill/chill_03_filter.jpg);
+	}
+}
+
+.hiphopItem {
+	background: url(../img/hiphop/hiphop_01.jpg);
+
+	&:hover {
+		background: url(../img/hiphop/hiphop_01_filter.jpg);
+	}
+}
+
+.latinItem {
+	background: url(../img/latin/latin_02.jpg);
+
+	&:hover {
+		background: url(../img/latin/latin_02_filter.jpg);
+	}
+}
+
+.metalItem {
+	background: url(../img/metal/metal_02.jpg);
+
+	&:hover {
+		background: url(../img/metal/metal_02_filter.jpg);
+	}
+}
+
+.houseItem {
+	background: url(../img/house/house_02.jpg);
+
+	&:hover {
+		background: url(../img/house/house_02_filter.jpg);
+	}
+}
+
+.bkg {
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+    &:hover {
+		background-size: cover;
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		filter: none;
+    }
+}
+

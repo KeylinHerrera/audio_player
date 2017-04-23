@@ -1,0 +1,1 @@
+AudioPlayer.init('playerContainer', list[2]);
